@@ -1,0 +1,36 @@
+object RefenForm: TRefenForm
+  Left = 292
+  Height = 431
+  Top = 162
+  Width = 588
+  Caption = 'RefenForm'
+  ClientHeight = 431
+  ClientWidth = 588
+  LCLVersion = '1.2.0.3'
+  object DBGrid1: TDBGrid
+    Left = 0
+    Height = 431
+    Top = 0
+    Width = 588
+    Align = alClient
+    Color = clWindow
+    Columns = <>
+    DataSource = Datasource1
+    Options = [dgEditing, dgTitles, dgIndicator, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgTabs, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit, dgAutoSizeColumns]
+    OptionsExtra = [dgeCheckboxColumn]
+    TabOrder = 0
+  end
+  object SQLQuery1: TSQLQuery
+    FieldDefs = <>
+    Database = ConnectModule.IBConnection
+    Transaction = ConnectModule.SQLTransaction
+    Params = <>
+    left = 520
+    top = 72
+  end
+  object Datasource1: TDatasource
+    DataSet = SQLQuery1
+    left = 552
+    top = 72
+  end
+end

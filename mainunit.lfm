@@ -1,0 +1,20 @@
+object MainForm: TMainForm
+  Left = 730
+  Height = 240
+  Top = 241
+  Width = 320
+  Caption = 'MainForm'
+  Menu = MainMenu
+  OnCreate = FormCreate
+  LCLVersion = '1.2.0.3'
+  object MainMenu: TMainMenu
+    left = 57
+    top = 24
+    object ffile: TMenuItem
+      Caption = 'Файл'
+    end
+    object Referen: TMenuItem
+      Caption = 'Таблицы'
+    end
+  end
+end
